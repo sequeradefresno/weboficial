@@ -15,7 +15,7 @@ font-family:Arial,sans-serif;
 
 .hero{
 height:100vh;
-
+padding-top:80px;
 background:
 linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
 url('fondo-sequera2.png');
@@ -65,9 +65,40 @@ font-weight:bold;
 
 <body>
 
+<nav style="
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(0,0,0,.85);
+backdrop-filter:blur(8px);
+padding:15px;
+text-align:center;
+z-index:1000;
+">
+
+<a href="index.html" style="color:#d9aa42;text-decoration:none;margin:0 15px;font-weight:bold;">
+🏠 Inicio
+</a>
+
+<a href="historia.html" style="color:#d9aa42;text-decoration:none;margin:0 15px;font-weight:bold;">
+📜 Historia
+</a>
+
+<a href="#galeria" style="color:#d9aa42;text-decoration:none;margin:0 15px;font-weight:bold;">
+📷 Galería
+</a>
+
+<a href="https://sequeradefresno.github.io/PedidosPenaSequeraDeFresno" target="_blank"
+style="color:#d9aa42;text-decoration:none;margin:0 15px;font-weight:bold;">
+🍻 Tienda
+</a>
+
+</nav>
+
 <section class="hero">
 
-<img src="logopena.jpeg">
+<img src="logopena.jpeg" alt="Logo Sequera de Fresno">
 
 <h1>SEQUERA DE FRESNO</h1>
 
@@ -79,3 +110,90 @@ href="https://sequeradefresno.github.io/PedidosPenaSequeraDeFresno"
 target="_blank">
 
 🍻 PEDIDOS DE ROPA OFICIAL
+
+</a>
+
+</section>
+
+<section style="
+background:#111;
+padding:80px 20px;
+color:white;
+">
+
+<h2 style="
+text-align:center;
+font-size:42px;
+color:#d9aa42;
+margin-bottom:40px;
+">
+🏡 Bienvenidos a Sequera de Fresno
+</h2>
+
+<div style="
+max-width:1000px;
+margin:auto;
+font-size:22px;
+line-height:1.8;
+text-align:center;
+">
+
+<p>
+Un lugar donde la historia, las tradiciones y la convivencia
+siguen formando parte de la vida diaria.
+</p>
+
+<br>
+
+<p>
+Descubre nuestro patrimonio, nuestras fiestas y todo lo que
+hace especial a Sequera de Fresno.
+</p>
+
+</div>
+
+</section>
+
+<section id="galeria" style="
+background:#181818;
+padding:80px 20px;
+">
+
+<h2 style="
+text-align:center;
+color:#d9aa42;
+font-size:42px;
+margin-bottom:40px;
+">
+📷 Galería
+</h2>
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+max-width:1200px;
+margin:auto;
+">
+
+<img src="fondo-sequera2.png" style="width:100%;border-radius:15px;">
+<img src="fondo-sequera2.png" style="width:100%;border-radius:15px;">
+<img src="fondo-sequera2.png" style="width:100%;border-radius:15px;">
+
+</div>
+
+</section>
+
+<footer style="
+background:black;
+color:#d9aa42;
+padding:30px;
+text-align:center;
+">
+
+© Sequera de Fresno
+
+</footer>
+
+</body>
+</html>
